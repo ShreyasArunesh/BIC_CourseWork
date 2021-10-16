@@ -1,0 +1,25 @@
+
+
+
+import numpy as np
+import src.neuron as neuron
+
+class layers:
+
+    def __init__(self):
+        self.neurons = list()
+        self.output = np.array([])
+
+    def neurons(self ,nNeurons ,activation ,input_dim :False):
+        for i in range(nNeurons):
+            if input_dim == False:
+                self.neurons.append(neuron(self.prev_shape, activation))
+                self.prev_shape = nNeurons
+            else:
+                self.neurons.append(neuron(input_dim, activation))
+                self.prev_shape = nNeurons
+
+    def get_output(self ,input):
+        for neuron in self.neurons():
+            self.output = np.append(self.output ,neuron.compute(input))
+        return self.output
