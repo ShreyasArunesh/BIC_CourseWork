@@ -1,5 +1,7 @@
 
 import math
+import numpy as np
+
 # activation function and its derivative
 def relu(x):
     return np.maximum(x,0)
@@ -28,19 +30,16 @@ def d_mse(y_true, y_pred):
 
 def binary_cross_entropy(y_true, y_pred):
     if y_true == 1:
-        return -1 / y_pred
+        return - np.log(y_pred)
     else:
-        return 1 / (1 - y_pred)
+        return - np.log(1-y_pred)
 
 def d_binary_cross_entropy(y_true, y_pred):
     if y_true == 1:
-        return -np.log(y_pred)
+        return np.array(-1/ y_pred)
     else:
-        return -np.log(1 - y_pred)
+        return np.array(1/(1-y_pred))
 
-
-
-import numpy as np
 
 # inherit from base class Layer
 class FCLayer:
@@ -123,34 +122,52 @@ class Network:
                     output = layer.forward_propagation(output)
 
                 # compute loss (for display purpose only)
+
                 err += self.loss(y_train[j], output)
 
                 # backward propagation
-                error = self.d_loss(y_train[j], output)
+                error = np.array(self.d_loss(y_train[j], output)).reshape(1, 1)
+
                 for layer in reversed(self.layers):
                     error = layer.backward_propagation(error, learning_rate)
                     print(error)
-
             err /= len(x_train)
-            print('epoch %d/%d   error=%f' % (i+1, epochs, err))
+            print('epoch %d/%d   error=%f' % (i + 1, epochs, err))
 
 
+# x_train = np.array([[[0,0]], [[0,1]], [[1,0]], [[1,1]]])
+# y_train = np.array([[[0]], [[1]], [[1]], [[0]]])
 
 
+input_array = np.loadtxt("dataset/data_banknote_authentication.txt",delimiter=',')
+np.random.shuffle(input_array)
+x_train = input_array[:,:-1]
+x_train = np.reshape(x_train,(-1,1,4))
+y_train = input_array[:,-1]
+y_train = np.reshape(y_train,(-1,1,1))
 
-x_train = np.array([[[0,0]], [[0,1]], [[1,0]], [[1,1]]])
-y_train = np.array([[[0]], [[1]], [[1]], [[0]]])
 
 
 # network
 net = Network()
-net.add_layer(FCLayer(2, 3,"tanh"))
-net.add_layer(FCLayer(3, 1,"tanh"))
+net.add_layer(FCLayer(2, 3,"relu"))
+net.add_layer(FCLayer(3, 2,"tanh"))
+net.add_layer(FCLayer(2, 1,"sigmoid"))
 
 # train
-net.compile("mse")
+net.compile("binary_cross_entropy") #binary_cross_entropy
 net.fit(x_train, y_train, epochs=1000, learning_rate=0.1)
 
 # test
 out = net.predict(x_train)
 print(out)
+
+
+# Calculating Accuracy
+def accuracy(y_train, out):
+    accuracy = np.mean(out == y_train)
+    return accuracy
+
+print(accuracy(np.round(y_train,0), np.round(out,0)))
+
+
