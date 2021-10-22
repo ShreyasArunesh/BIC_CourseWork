@@ -81,15 +81,22 @@ class mlp:
     def predict(self,x_input):
         return "output"
 
+input_array = np.loadtxt("dataset/data_banknote_authentication.txt",delimiter=',')
+np.random.shuffle(input_array)
+x_train = input_array[:,:-1]
+x_train = np.reshape(x_train,(-1,1,4))
+y_train = input_array[:,-1]
+y_train = np.reshape(y_train,(-1,1,1))
 
 
-m = mlp()
-m.add_layer(2,"identity",3)
-m.add_layer(2,"identity")
-m.add_layer(1,"identity")
-m.output
-m.train([[1,1,1]],0,1,1,1)
 
-for l in m.layers:
-    for n in l.neurons:
-        print(n.weights)
+# m = mlp()
+# m.add_layer(2,"identity",3)
+# m.add_layer(2,"identity")
+# m.add_layer(1,"identity")
+# m.output
+# m.train([[1,1,1]],0,1,1,1)
+#
+# for l in m.layers:
+#     for n in l.neurons:
+#         print(n.weights)
