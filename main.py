@@ -1,6 +1,7 @@
 from MLP import MLP
 from MLP import FCLayer
 import numpy as np
+from time import time
 # x_train = np.array([[[0,0]], [[0,1]], [[1,0]], [[1,1]]])
 # y_train = np.array([[[0]], [[1]], [[1]], [[0]]])
 
@@ -13,40 +14,66 @@ y_train = input_array[:,-1]
 y_train = np.reshape(y_train,(-1,1,1))
 
 
+Output_file = open("output.txt","w+")
+
 hyperparameters = [
-    # # Accuracy vs layers and neurone [1-10][2-10]
-    # {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1,"learning_rate":0.5},
-    # {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":6,"no_neurons":6,"loss":"mse","epochs":1,"learning_rate":0.5},
-    #
-    # # Accuracy vs activation function in hidden layer [tanh,relu]
-    # {"hl_act": "relu","ol_act": "relu","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":100,"learning_rate":0.5},
-    # {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":100,"learning_rate":0.5},
-    #
-    # # Accuracy vs activation function in output layer [tanh,sigmoid,relu]
-    # {"hl_act": "tanh","ol_act": "sigmoid","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":100,"learning_rate":0.5},
-    # {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":100,"learning_rate":0.5},
-    # {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":100,"learning_rate":0.5},
-    #
-    # # Accuracy vs learning rate [0.1-0.9]
-    # {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":100,"learning_rate":0.5},
-    #
-    # # Accuracy vs epoch [1-1000,100]
-    # {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":100,"learning_rate":0.5},
+     # Accuracy vs layers and neurone [1-10][2-10]
+    {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":2,"no_neurons":2,"loss":"mse","epochs":500,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":3,"no_neurons":3,"loss":"mse","epochs":500,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":4,"no_neurons":4,"loss":"mse","epochs":500,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":5,"no_neurons":5,"loss":"mse","epochs":500,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":6,"no_neurons":6,"loss":"mse","epochs":500,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":7,"no_neurons":7,"loss":"mse","epochs":500,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":8,"no_neurons":8,"loss":"mse","epochs":500,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":9,"no_neurons":9,"loss":"mse","epochs":500,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":10,"no_neurons":10,"loss":"mse","epochs":500,"learning_rate":0.1},
+
+
+    # Accuracy vs activation function in hidden layer [tanh,relu]
+    {"hl_act": "relu","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
+
+    # Accuracy vs activation function in output layer [tanh,sigmoid,relu]
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "sigmoid","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
+
+    # Accuracy vs learning rate [0.1-0.9]
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.2},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.3},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.4},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.5},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.6},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.7},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.8},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.9},
+
+    # Accuracy vs epoch [1-1000,100]
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":100,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":200,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":400,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":600,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":800,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
 
     # Accuracy vs loss [mse,log]
-    # {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":100,"learning_rate":0.5},
-    {"hl_act": "tanh","ol_act": "sigmoid","no_hiddenlayers":3,"no_neurons":4,"loss":"binary_cross_entropy","epochs":10,"learning_rate":0.5},
+    {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "sigmoid","no_hiddenlayers":3,"no_neurons":4,"loss":"binary_cross_entropy","epochs":1000,"learning_rate":0.1},
 ]
 
-results = []
-time = []
-
+avg_acccuracy = []
+avg_total_time = []
 for set_index,set in enumerate(hyperparameters):
     print(f"Training on set :  {set}\n")
-    avg_acc_set_10 = []
+    Output_file.write(f"Training on set :  {set}\n\n")
+    acc_set_10 = []
+    total_time_10 = []
     for i in range(10):
         # start time
-        print( f"Random Weights Training subset {i+1} Processing...\n")
+        start = time()
+        print(f"Random Weights Training subset {i + 1} Processing...\n")
         model = MLP()
         model.add_layer(FCLayer(x_train.shape[-1], set["no_neurons"], set["hl_act"]))
         for l in range(set["no_hiddenlayers"]):
@@ -58,19 +85,19 @@ for set_index,set in enumerate(hyperparameters):
         pred = model.predict(x_train)
 
         # end time
-        avg_acc_set_10.append(np.mean(np.around(pred, 0) == y_train))
+        total_time_10.append (time() - start)
+        acc_set_10.append(np.around(pred, 0) == y_train)
+        Output_file.write(f"Random Weights Training subset {i + 1} Processed \n")
 
-    # time.append(end time - start time)
+    # avg_acc_set_10.append(avg)
 
-    results.append({f"set-{set_index}":avg_acc_set_10})
+    avg_acccuracy.append({f"set-{set_index}":np.mean(acc_set_10)})
+    avg_total_time.append({f"set-{set_index}":np.mean(total_time_10)})
 
-    print(f"\nAverage Accuracy over 10 Training (random weights) : {results[-1]}")
+    print(f"\nAverage Accuracy of a sets over 10 Training (random weights) : {avg_acccuracy[-1]}")
+    print( f"\nAverage Time taken to run that sets over 10 Training (random weights) : {avg_total_time[-1]} seconds \n\n")
 
+    Output_file.write(f"\nAverage Accuracy of a sets over 10 Training (random weights) : {avg_acccuracy[-1]}")
+    Output_file.write (f"\nAverage Time taken to run that sets over 10 Training (random weights) : {avg_total_time} seconds \n\n")
 
-#
-# model = MLP()
-# model.add_layer(FCLayer(2, 4, 'tanh'))
-# model.add_layer(FCLayer(4, 1, 'sigmoid'))
-#
-# model.fit(x_train, y_train,100, 0.5)
-# model.compile(log)
+Output_file.close()
