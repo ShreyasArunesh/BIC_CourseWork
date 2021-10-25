@@ -2,6 +2,7 @@ from MLP import MLP
 from MLP import FCLayer
 import numpy as np
 from time import time
+import matplotlib.pyplot as plt
 # x_train = np.array([[[0,0]], [[0,1]], [[1,0]], [[1,1]]])
 # y_train = np.array([[[0]], [[1]], [[1]], [[0]]])
 
@@ -38,7 +39,7 @@ hyperparameters = [
     {"hl_act": "tanh","ol_act": "sigmoid","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
     {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
 
-    # Accuracy vs learning rate [0.1-0.9]
+    Accuracy vs learning rate [0.1-0.9]
     {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
     {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.2},
     {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.3},
@@ -49,19 +50,19 @@ hyperparameters = [
     {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.8},
     {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.9},
 
-    # Accuracy vs epoch [1-1000,100]
-    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":100,"learning_rate":0.1},
-    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":200,"learning_rate":0.1},
-    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":400,"learning_rate":0.1},
-    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":600,"learning_rate":0.1},
-    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":800,"learning_rate":0.1},
-    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
-
-    # Accuracy vs loss [mse,log]
-    {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
-    {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
+    Accuracy vs epoch [1-1000,100]
+    {"hl_act": "tanh","ol_act": "sigmoid","no_hiddenlayers":3,"no_neurons":4,"loss":"binary_cross_entropy","epochs":200,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "sigmoid","no_hiddenlayers":3,"no_neurons":4,"loss":"binary_cross_entropy","epochs":400,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "sigmoid","no_hiddenlayers":3,"no_neurons":4,"loss":"binary_cross_entropy","epochs":600,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "sigmoid","no_hiddenlayers":3,"no_neurons":4,"loss":"binary_cross_entropy","epochs":800,"learning_rate":0.1},
+    {"hl_act": "tanh","ol_act": "sigmoid","no_hiddenlayers":3,"no_neurons":4,"loss":"binary_cross_entropy","epochs":900,"learning_rate":0.1},
     {"hl_act": "tanh","ol_act": "sigmoid","no_hiddenlayers":3,"no_neurons":4,"loss":"binary_cross_entropy","epochs":1000,"learning_rate":0.1},
-]
+
+#     # Accuracy vs loss [mse,log]
+#     {"hl_act": "tanh","ol_act": "relu","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
+#     {"hl_act": "tanh","ol_act": "tanh","no_hiddenlayers":3,"no_neurons":4,"loss":"mse","epochs":1000,"learning_rate":0.1},
+#     {"hl_act": "tanh","ol_act": "sigmoid","no_hiddenlayers":3,"no_neurons":4,"loss":"binary_cross_entropy","epochs":1000,"learning_rate":0.1},
+ ]
 
 avg_acccuracy = []
 avg_total_time = []
@@ -70,7 +71,7 @@ for set_index,set in enumerate(hyperparameters):
     Output_file.write(f"Training on set :  {set}\n\n")
     acc_set_10 = []
     total_time_10 = []
-    for i in range(10):
+    for i in range(1):
         # start time
         start = time()
         print(f"Random Weights Training subset {i + 1} Processing...\n")
@@ -100,4 +101,20 @@ for set_index,set in enumerate(hyperparameters):
     Output_file.write(f"\nAverage Accuracy of a sets over 10 Training (random weights) : {avg_acccuracy[-1]}")
     Output_file.write (f"\nAverage Time taken to run that sets over 10 Training (random weights) : {avg_total_time} seconds \n\n")
 
-Output_file.close()
+
+
+# Output_file.close()
+#
+# plt.scatter(X_hl_act, Y_accuracy, color = 'red')
+# plt.plot(X_no_hiddenlayers_neurons, Y_accuracy, color = 'blue' )
+# plt.title('Accuracy vs Hidden layers ativation function')
+# plt.xlabel('Hidden layers ativation function')
+# plt.ylabel('Average accuracy for iteration')
+# plt.show()
+#
+# plt.scatter(X_hl_act, Y_Avg_time, color = 'red')
+# plt.plot(X_no_hiddenlayers_neurons, Y_Avg_time, color = 'blue' )
+# plt.title('Time taken for the interation vs Hidden layers ativation function')
+# plt.xlabel('Hidden layers ativation function')
+# plt.ylabel('Average time for iteration in (seconds)')
+# plt.show()

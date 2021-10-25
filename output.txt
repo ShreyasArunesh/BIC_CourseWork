@@ -11,8 +11,8 @@ Random Weights Training subset 8 Processed
 Random Weights Training subset 9 Processed 
 Random Weights Training subset 10 Processed 
 
-Average Accuracy of a sets over 10 Training (random weights) : {'set-0': 0.7325072886297376}
-Average Time taken to run that sets over 10 Training (random weights) : [{'set-0': 39.749906945228574}] seconds 
+Average Accuracy of a sets over 10 Training (random weights) : {'set-0': 0.9555393586005831}
+Average Time taken to run that sets over 10 Training (random weights) : {'set-0': 41.74834017753601} seconds 
 
 Training on set :  {'hl_act': 'tanh', 'ol_act': 'relu', 'no_hiddenlayers': 3, 'no_neurons': 3, 'loss': 'mse', 'epochs': 500, 'learning_rate': 0.1}
 
@@ -27,8 +27,8 @@ Random Weights Training subset 8 Processed
 Random Weights Training subset 9 Processed 
 Random Weights Training subset 10 Processed 
 
-Average Accuracy of a sets over 10 Training (random weights) : {'set-1': 0.9110787172011662}
-Average Time taken to run that sets over 10 Training (random weights) : [{'set-0': 39.749906945228574}, {'set-1': 47.307548594474795}] seconds 
+Average Accuracy of a sets over 10 Training (random weights) : {'set-1': 1.0}
+Average Time taken to run that sets over 10 Training (random weights) : {'set-1': 49.01541357040405} seconds 
 
 Training on set :  {'hl_act': 'tanh', 'ol_act': 'relu', 'no_hiddenlayers': 4, 'no_neurons': 4, 'loss': 'mse', 'epochs': 500, 'learning_rate': 0.1}
 
@@ -43,8 +43,8 @@ Random Weights Training subset 8 Processed
 Random Weights Training subset 9 Processed 
 Random Weights Training subset 10 Processed 
 
-Average Accuracy of a sets over 10 Training (random weights) : {'set-2': 0.8221574344023324}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-2': 54.15273489952087 seconds 
+Average Accuracy of a sets over 10 Training (random weights) : {'set-2': 0.9548104956268222}
+Average Time taken to run that sets over 10 Training (random weights) : {'set-2': 55.609836435317995} seconds 
 
 Training on set :  {'hl_act': 'tanh', 'ol_act': 'relu', 'no_hiddenlayers': 5, 'no_neurons': 5, 'loss': 'mse', 'epochs': 500, 'learning_rate': 0.1}
 
@@ -59,8 +59,8 @@ Random Weights Training subset 8 Processed
 Random Weights Training subset 9 Processed 
 Random Weights Training subset 10 Processed 
 
-Average Accuracy of a sets over 10 Training (random weights) : {'set-3': 0.8221574344023324}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-3': 61.288610672950746} seconds 
+Average Accuracy of a sets over 10 Training (random weights) : {'set-3': 0.9555393586005831}
+Average Time taken to run that sets over 10 Training (random weights) : {'set-3': 63.09521083831787} seconds 
 
 Training on set :  {'hl_act': 'tanh', 'ol_act': 'relu', 'no_hiddenlayers': 6, 'no_neurons': 6, 'loss': 'mse', 'epochs': 500, 'learning_rate': 0.1}
 
@@ -75,8 +75,8 @@ Random Weights Training subset 8 Processed
 Random Weights Training subset 9 Processed 
 Random Weights Training subset 10 Processed 
 
-Average Accuracy of a sets over 10 Training (random weights) : {'set-4': 0.9110787172011662}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-4': 68.86414651870727} seconds 
+Average Accuracy of a sets over 10 Training (random weights) : {'set-4': 0.9110058309037901}
+Average Time taken to run that sets over 10 Training (random weights) : {'set-4': 70.99528553485871} seconds 
 
 Training on set :  {'hl_act': 'tanh', 'ol_act': 'relu', 'no_hiddenlayers': 7, 'no_neurons': 7, 'loss': 'mse', 'epochs': 500, 'learning_rate': 0.1}
 
@@ -91,8 +91,8 @@ Random Weights Training subset 8 Processed
 Random Weights Training subset 9 Processed 
 Random Weights Training subset 10 Processed 
 
-Average Accuracy of a sets over 10 Training (random weights) : {'set-5': 0.7776967930029155}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-5': 75.69092290401458} seconds 
+Average Accuracy of a sets over 10 Training (random weights) : {'set-5': 0.9104227405247813}
+Average Time taken to run that sets over 10 Training (random weights) : {'set-5': 78.71806807518006} seconds 
 
 Training on set :  {'hl_act': 'tanh', 'ol_act': 'relu', 'no_hiddenlayers': 8, 'no_neurons': 8, 'loss': 'mse', 'epochs': 500, 'learning_rate': 0.1}
 
@@ -107,8 +107,8 @@ Random Weights Training subset 8 Processed
 Random Weights Training subset 9 Processed 
 Random Weights Training subset 10 Processed 
 
-Average Accuracy of a sets over 10 Training (random weights) : {'set-6': 0.6887755102040817}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-6': 82.62524352073669} seconds 
+Average Accuracy of a sets over 10 Training (random weights) : {'set-6': 0.7368804664723032}
+Average Time taken to run that sets over 10 Training (random weights) : {'set-6': 84.99937229156494} seconds 
 
 Training on set :  {'hl_act': 'tanh', 'ol_act': 'relu', 'no_hiddenlayers': 9, 'no_neurons': 9, 'loss': 'mse', 'epochs': 500, 'learning_rate': 0.1}
 
@@ -123,8 +123,8 @@ Random Weights Training subset 8 Processed
 Random Weights Training subset 9 Processed 
 Random Weights Training subset 10 Processed 
 
-Average Accuracy of a sets over 10 Training (random weights) : {'set-7': 0.6407434402332362}
-Average Time taken to run that sets over 10 Training (random weights) :{'set-7': 90.35007643699646} seconds 
+Average Accuracy of a sets over 10 Training (random weights) : {'set-7': 0.5997084548104956}
+Average Time taken to run that sets over 10 Training (random weights) : {'set-7': 93.41044788360595} seconds 
 
 Training on set :  {'hl_act': 'tanh', 'ol_act': 'relu', 'no_hiddenlayers': 10, 'no_neurons': 10, 'loss': 'mse', 'epochs': 500, 'learning_rate': 0.1}
 
@@ -139,8 +139,8 @@ Random Weights Training subset 8 Processed
 Random Weights Training subset 9 Processed 
 Random Weights Training subset 10 Processed 
 
-Average Accuracy of a sets over 10 Training (random weights) : {'set-8': 0.6308309037900874}
-Average Time taken to run that sets over 10 Training (random weights) :{'set-8': 97.85467877388001} seconds 
+Average Accuracy of a sets over 10 Training (random weights) : {'set-8': 0.5553935860058309}
+Average Time taken to run that sets over 10 Training (random weights) : {'set-8': 100.22958195209503} seconds 
 
 Training on set :  {'hl_act': 'relu', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.1}
 
@@ -155,358 +155,11 @@ Random Weights Training subset 8 Processed
 Random Weights Training subset 9 Processed 
 Random Weights Training subset 10 Processed 
 
-Average Accuracy of a sets over 10 Training (random weights) : {'set-9': 0.935932944606414}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-9': 100.14186818599701} seconds 
+Average Accuracy of a sets over 10 Training (random weights) : {'set-9': 0.9436588921282799}
+Average Time taken to run that sets over 10 Training (random weights) : {'set-9': 104.04496428966522} seconds 
 
 Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.1}
 
 Random Weights Training subset 1 Processed 
 Random Weights Training subset 2 Processed 
 Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-10': 1.0}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-10': 92.56620628833771} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.1}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-11': 1.0}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-11': 92.48575692176819} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'sigmoid', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.1}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-12': 0.4765667366488453}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-12': 106.77859401702881} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'relu', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.1}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-13': 0.7776967930029155}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-13': 94.79522240161896} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.1}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-14': 1.0}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-14': 92.32165882587432} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.2}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-15': 0.999271137026239}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-15': 92.64926028251648} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.3}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-16': 0.9975947521865889}
-Average Time taken to run that sets over 10 Training (random weights) :{'set-16': 92.11353151798248} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.4}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-17': 0.9768950437317784}
-Average Time taken to run that sets over 10 Training (random weights) :{'set-17': 92.15052552223206} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.5}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-18': 0.5392857142857143}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-18': 91.91627991199493} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.6}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-19': 0.4586734693877551}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-19': 91.67139852046967} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.7}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-20': 0.4446064139941691}
-Average Time taken to run that sets over 10 Training (random weights) :{'set-20': 91.5641494512558}] seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.8}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-21': 0.4446064139941691}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-21': 91.59829263687134} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.9}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-22': 0.4446064139941691}
-Average Time taken to run that sets over 10 Training (random weights) :{'set-22': 92.07948682308196} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 100, 'learning_rate': 0.1}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-23': 1.0}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-23': 9.307018208503724} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 200, 'learning_rate': 0.1}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-24': 1.0}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-24': 18.380384707450865} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 400, 'learning_rate': 0.1}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-25': 1.0}
-Average Time taken to run that sets over 10 Training (random weights) :{'set-25': 37.093035984039304} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 600, 'learning_rate': 0.1}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-26': 1.0}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-26': 55.663477182388306} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 800, 'learning_rate': 0.1}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-27': 1.0}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-27': 73.84041109085084} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.1}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-28': 1.0}
-Average Time taken to run that sets over 10 Training (random weights) :{'set-28': 92.0365672826767} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'relu', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.1}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-29': 0.8221574344023324}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-29': 93.90940616130828} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'tanh', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'mse', 'epochs': 1000, 'learning_rate': 0.1}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-30': 1.0}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-30': 91.95424673557281} seconds 
-
-Training on set :  {'hl_act': 'tanh', 'ol_act': 'sigmoid', 'no_hiddenlayers': 3, 'no_neurons': 4, 'loss': 'binary_cross_entropy', 'epochs': 1000, 'learning_rate': 0.1}
-
-Random Weights Training subset 1 Processed 
-Random Weights Training subset 2 Processed 
-Random Weights Training subset 3 Processed 
-Random Weights Training subset 4 Processed 
-Random Weights Training subset 5 Processed 
-Random Weights Training subset 6 Processed 
-Random Weights Training subset 7 Processed 
-Random Weights Training subset 8 Processed 
-Random Weights Training subset 9 Processed 
-Random Weights Training subset 10 Processed 
-
-Average Accuracy of a sets over 10 Training (random weights) : {'set-31': 0.48892128279883385}
-Average Time taken to run that sets over 10 Training (random weights) : {'set-31': 96.47566838264466} seconds 
-

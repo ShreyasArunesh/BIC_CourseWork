@@ -133,9 +133,7 @@ class MLP:
 
 
 #
-# # x_train = np.array([[[0,0]], [[0,1]], [[1,0]], [[1,1]]])
-# # y_train = np.array([[[0]], [[1]], [[1]], [[0]]])
-#
+
 # #
 # input_array = np.loadtxt("dataset/data_banknote_authentication.txt",delimiter=',')
 # np.random.shuffle(input_array)
@@ -144,6 +142,18 @@ class MLP:
 # y_train = input_array[:,-1]
 # y_train = np.reshape(y_train,(-1,1,1))
 #
+
+
+
+
+
+
+
+
+# # x_train = np.array([[[0,0]], [[0,1]], [[1,0]], [[1,1]]])
+# # y_train = np.array([[[0]], [[1]], [[1]], [[0]]])
+#
+
 # # network
 # model = MLP()
 # model.add_layer(FCLayer(4, 3,"tanh"))
