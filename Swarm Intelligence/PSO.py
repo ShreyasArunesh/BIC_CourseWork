@@ -104,9 +104,6 @@ class ParticleSwarmOptimizer:
         return self
 
 
-from collections import Iterable
-import numpy as np
-
 
 class Particle:
 
