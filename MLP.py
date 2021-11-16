@@ -133,7 +133,6 @@ class MLP:
             err /= len(x_train)
 
 
-#
 
 # #
 # input_array = np.loadtxt("dataset/data_banknote_authentication.txt",delimiter=',')
