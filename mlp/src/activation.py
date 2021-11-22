@@ -1,23 +1,4 @@
 
-'''
- *
- * Name                   :   activation.py
- *
- * Description            :   it implements the following activation fuctions
- *
- *                            1. Null
- *                            2. Sigmoid 
- *                            3. Hyperbolic Tangent
- *                            4. Cosine
- *                            5. Gaussian
- *                            6. Identity
- *
- * Authors                :   Rémi Desmartin and Mohith Gowda Heggur Ramesh   
- *                                       
- *
-'''
-
-
 '''importing packages'''
 from typing import TypeVar
 import numpy as np
