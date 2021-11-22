@@ -1,18 +1,4 @@
 
-'''
- *
- * Name                   :   pso.py
- *
- * Description            :   it implements the following class
- *
- *                            1. PSO   -   implements the PSO algorithm.
- *
- *
- * Authors                :   Rémi Desmartin and Mohith Gowda Heggur Ramesh
- *
- *
-'''
-
 
 '''importing the dataset'''
 import numpy as np
