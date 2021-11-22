@@ -1,14 +1,3 @@
-'''
- *
- * Name                   :   experiments.py
- *
- * Description            :   it executes various experiments on the PSO
- *                            Hyper-Parameters and Multilayer ANN.
- *
- * Authors                :   Rémi Desmartin and Mohith Gowda Heggur Ramesh
- *
- *
-'''
 
 '''importing packages'''
 import csv

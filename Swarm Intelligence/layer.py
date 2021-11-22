@@ -97,3 +97,10 @@ class Layer:
     def forward(self, wts, x):
         W, b = self._reshape_weights(wts)
         return self.activation(np.dot(x, W) + b)
+
+
+
+
+def __set_shape(self, new_shape: Tuple[4, 3) -> None:
+    self.weights = np.full((new_shape[1], new_shape[0] + 1), 1.)  # add 1 to new_shape[0] for the bias
+    self.__shape = new_shape
